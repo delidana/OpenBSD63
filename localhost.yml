@@ -1,0 +1,7 @@
+- name: Make sure nmap is the latest version
+  openbsd_pkg:
+    name: "{{ item }}" 
+    State: latest
+  with_items:
+	- htop
+	- screenfetch

@@ -1,3 +1,7 @@
+- hosts: localhost
+  gather_facts: yes
+  user: root
+
 - name: Make sure nmap is the latest version
   openbsd_pkg:
     name: "{{ item }}" 
